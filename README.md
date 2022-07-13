@@ -1,46 +1,29 @@
 ## Application Details
-|               |
-| ------------- |
-|**Generation Date and Time**<br>Wed Jul 13 2022 10:30:52 GMT+0000 (Coordinated Universal Time)|
-|**App Generator**<br>@sap/generator-fiori-freestyle|
-|**App Generator Version**<br>1.6.6|
-|**Generation Platform**<br>SAP Business Application Studio|
-|**Floorplan Used**<br>1worklist|
-|**Service Type**<br>SAP System (ABAP On Premise)|
-|**Service URL**<br>https://sapes5.sapdevcenter.com:443/sap/opu/odata/iwbep/GWDEMO
-|**Module Name**<br>salesorders|
-|**Application Title**<br>SalesOrders|
-|**Namespace**<br>my.company|
-|**UI5 Theme**<br>sap_fiori_3|
-|**UI5 Version**<br>1.84.14|
-|**Enable Code Assist Libraries**<br>False|
-|**Add Eslint configuration**<br>False|
-|**Object collection**<br>SalesOrderCollection|
-|**Object collection key**<br>SalesOrderKey|
-|**Object ID**<br>SalesOrderID|
-|**Object number**<br>TotalSum|
-|**Object unit of measure**<br>Currency|
 
-## salesorders
+This application is used to test destinations.
+all you need to do is to:
 
-A Fiori application.
+1. create a destination like this:
+1. modify the file xs-app.json
+1. modify the buttons in the file Worklist.view.xml
+1. modify the controller Worklist.controller.js
 
-### Starting the generated app
-
--   This app has been generated using the SAP Fiori tools - App Generator, as part of the SAP Fiori tools suite.  In order to launch the generated app, simply run the following from the generated app root folder:
+A destination can be like this:
 
 ```
-    npm start
+#Password=<< Existing password/certificate removed on export >>
+#
+#Thu Jun 16 12:17:12 UTC 2022
+Description=es5
+Type=HTTP
+HTML5.Timeout=60000
+HTML5.DynamicDestination=true
+Authentication=BasicAuthentication
+WebIDEUsage=odata_abap,dev_abap
+Name=es5
+WebIDEEnabled=true
+ProxyType=Internet
+URL=https\://sapes5.sapdevcenter.com\:443
+User=i045523
+WebIDESystem=es5
 ```
-
-- It is also possible to run the application using mock data that reflects the OData Service URL supplied during application generation.  In order to run the application with Mock Data, run the following from the generated app root folder:
-
-```
-    npm run start-mock
-```
-
-#### Pre-requisites:
-
-1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
-
-
