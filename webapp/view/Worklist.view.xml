@@ -1,0 +1,15 @@
+<mvc:View
+    controllerName="my.company.salesorders.controller.Worklist"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:semantic="sap.f.semantic">
+
+	<Page
+		title="Page"
+		class="sapUiContentPadding" >
+		<content>
+			<Button text="ES5" press="onPress" />
+			<Button text="FIELDGLASS" press="onPress2" />
+		</content>
+	</Page>
+</mvc:View>
