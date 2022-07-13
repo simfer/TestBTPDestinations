@@ -42,7 +42,6 @@ sap.ui.define([
                 "method": "GET",
                 "timeout": 0,
                 "headers": {
-                    "Authorization": "Basic aTA0NTUyMzpBZG1pbjEyMw==",
                     "Content-Type": "application/json"
                 },
             };
